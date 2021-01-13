@@ -299,8 +299,8 @@ public class WebRtcClient {
         client.on("message", messageHandler.onMessage);
         client.connect();
 
-        iceServers.add(new PeerConnection.IceServer("stun:23.21.150.121"));
-        iceServers.add(new PeerConnection.IceServer("stun:stun.l.google.com:19302"));
+        iceServers.add(new PeerConnection.IceServer("stun:stun.rixtelecom.se"));
+        iceServers.add(new PeerConnection.IceServer("stun:stun.schlund.de"));
 
         pcConstraints.mandatory.add(new MediaConstraints.KeyValuePair("OfferToReceiveAudio", "true"));
         pcConstraints.mandatory.add(new MediaConstraints.KeyValuePair("OfferToReceiveVideo", "true"));
